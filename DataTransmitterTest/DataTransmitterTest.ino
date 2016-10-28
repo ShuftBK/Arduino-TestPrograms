@@ -10,7 +10,8 @@ void setup() {
 }
 
 void loop() {
-  if(Serial.available()){
-  Serial.println(Serial.read());
+  if(Serial.available() > 0){
+    int get_data = Serial.read();
+  Serial.println(get_data,DEC);
   }
 }
