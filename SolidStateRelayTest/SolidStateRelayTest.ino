@@ -16,16 +16,17 @@ void setup() {
   pinMode(7,OUTPUT);  // Arrow6
   pinMode(8,OUTPUT);  // Arrow7(shot heart)
 
-  // Flag Check
+  // Flag Check(NOT USE)
   pinMode(13,OUTPUT);
 }
 
 void loop() {
-  
+  // HIGH OUTPUT SELECT NUM'i' LED
   digitalWrite(i,HIGH);
-
+  // delay 750mS
   delay(750);
-  
+  // LOW OUTPUT SELECT NUM'i' LED
+  // increment after call digitalWrite
   digitalWrite(i++,LOW);
 
   if(i == 9)
