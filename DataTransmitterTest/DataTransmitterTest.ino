@@ -12,6 +12,6 @@ void setup() {
 void loop() {
   if(Serial.available() > 0){
     int get_data = Serial.read();
-  Serial.println(get_data,DEC);
+    Serial.println(get_data,DEC);
   }
 }
